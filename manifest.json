@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "ChromePlugin",
+  "version": "1.0.0",
+  "description": "lining first chrome plugin",
+  "author": "lining",
+  "icons":
+  {
+    "48": "bdd.webp",
+    "128": "bdd.webp"
+  },
+  "browser_action":
+  {
+    "default_title": "chrome插件tab",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":
+  [
+    {
+      "matches": ["http://http://cu.caih.com/*"],
+      "js": ["popup.js"]
+    }
+  ]
+}
